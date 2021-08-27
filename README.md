@@ -1,1 +1,1 @@
-# sber_cv
+Please check pipeline_final.ipynb and netrunner.py.
