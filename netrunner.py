@@ -116,6 +116,7 @@ class NetRunner():
     
     @torch.no_grad()
     def validate(self, loader, model=None, phase_name='val', **kwargs):
+        self.model = model or self.model
         self._phase_name = phase_name
         self._reset_events(phase_name)
         self._run_epoch(loader, train_phase=False, output_log=True, **kwargs)
